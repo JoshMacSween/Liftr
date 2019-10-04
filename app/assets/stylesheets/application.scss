@@ -14,6 +14,9 @@
  *= require_self
  */
 
+@import 'bootstrap';
+@import 'effective_bootstrap';
+
 body {
   background: aliceblue;
 }
@@ -25,4 +28,9 @@ body {
 
 .ctr  {
   text-align: center;
+}
+
+.btn  {
+  padding: 10px;
+  margin-top: 25px;
 }

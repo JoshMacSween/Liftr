@@ -14,3 +14,11 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+//= require jquery3
+//= require popper
+//= require bootstrap
+//= require effective_bootstrap
+
+//= require moment/locale/es
+//= require moment/locale/nl
