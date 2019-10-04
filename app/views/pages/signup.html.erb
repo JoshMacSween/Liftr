@@ -1,5 +1,8 @@
 <div class="container">
-  <div class="row"></div>
-  <div class="row"></div>
-  <div class="row"></div>
+  <%= effective_form_with model:User.new do|f| %>
+    <%= f.text_field :username %>
+    <%= f.text_field :password %>
+    <%= f.email_field :email %>
+    <% f.submit "Create" %>
+  <% end %>
 </div>
