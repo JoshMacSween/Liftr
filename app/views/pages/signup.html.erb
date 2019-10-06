@@ -1,8 +1,13 @@
-<div class="container">
+<div class="container sign">
   <%= effective_form_with model:User.new do|f| %>
     <%= f.text_field :username %>
     <%= f.text_field :password %>
     <%= f.email_field :email %>
     <% f.submit "Create" %>
   <% end %>
+
+  <div class="align">
+    <%= link_to 'Home', root_path, class: "btn btn-outline-primary" %>
+  </div>
+
 </div>

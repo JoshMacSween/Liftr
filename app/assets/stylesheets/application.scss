@@ -19,18 +19,20 @@
 
 body {
   background: aliceblue;
+  color: grey;
 }
 .mainPage {
   padding-top: 50px;
-  color: grey;
   text-align: center;
 }
 
-.ctr  {
-  text-align: center;
-}
-
-.btn  {
+.sign {
   padding: 10px;
   margin-top: 25px;
+}
+
+.align  {
+  text-align: center;
+  padding: 25px;
+  color: grey;
 }
