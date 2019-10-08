@@ -1,8 +1,17 @@
 <div class="container">
-  <%= effective_form_with(model: workout) do |form| %>
+  <%= form_with(model: workout) do |form| %>
     <%= form.text_field :title %>
     <%= form.datetime_field :date %>
-    <%= form.submit %>
+      <h3>Exercises</h3>
+      <div id="exercises">
+        <%= form.fields_for :exercises do |exercise| %>
+          <%= render 'exercise_fields', :form => exercise %>
+        <% end %>
+        <div class="links">
+          <%= link_to_add_association 'add exercise', form, :exercises %>
+        </div>
+      </div>
+    <%= form.submit "Save" %>
   <% end %>
 </div>
 
