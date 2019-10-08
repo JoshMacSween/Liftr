@@ -17,6 +17,8 @@
 @import 'bootstrap';
 @import 'effective_bootstrap';
 
+
+
 body {
   background: aliceblue;
   color: grey;
@@ -24,6 +26,10 @@ body {
 .mainPage {
   padding-top: 50px;
   text-align: center;
+}
+
+.bg {
+  padding: 25px;
 }
 
 .sign {
