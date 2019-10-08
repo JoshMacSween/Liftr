@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # devise_for :installs
+  devise_for :users
   root to: 'pages#home'
-  get 'pages/signup', to: 'pages#signup'
 
+  resources :workouts
   resources :users
 end
