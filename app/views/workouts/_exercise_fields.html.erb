@@ -1,0 +1,19 @@
+<div class='nested-fields'>
+    <div class="field">
+      <%= f.label :movement %>
+      <%= f.text_field :movement %>
+    </div>
+    <div class="field">
+      <%= f.label :weight %>
+      <%= f.text_field :weight %>
+    </div>
+    <div class="field">
+      <%= f.label :reps %>
+      <%= f.text_field :reps %>
+    </div>
+    <div class="field">
+      <%= f.label :sets %>
+      <%= f.text_field :sets %>
+    </div>
+    <%= link_to_remove_association "remove exercise", f %>
+  </div>

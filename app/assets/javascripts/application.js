@@ -19,6 +19,7 @@
 //= require popper
 //= require bootstrap
 //= require effective_bootstrap
+//= require cocoon
 
 //= require moment/locale/es
 //= require moment/locale/nl
