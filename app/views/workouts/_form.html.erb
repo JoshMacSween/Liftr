@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_with(model: workout) do |form| %>
+  <%= effective_form_with(model: workout) do |form| %>
     <%= form.text_field :title %>
     <%= form.datetime_field :date %>
       <h3>Exercises</h3>
