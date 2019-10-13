@@ -19,20 +19,12 @@
 
 
 
-body {
-  background: aliceblue;
-  color: grey;
+body, h1 {
+  background: #0b0c10;
+  color: #66fcf1;
 }
 .mainPage {
-  // padding-top: 50px;
   text-align: center;
-
-
-
-
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
 }
 
 .bg {
@@ -53,21 +45,22 @@ body {
   color: grey;
 }
 
-
 .sidenav {
   height: 100%;
-  width: 10%;
+  width: 160px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
 }
 
-
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav a {
+  color:#66fcf1;
+  padding: 50px;
 }
 
+.sidenav a:hover {
+  background-color: #45a29e;
+}
