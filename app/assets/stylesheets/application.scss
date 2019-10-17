@@ -19,10 +19,14 @@
 
 
 
-body, h1 {
-  background: #0b0c10;
+body {
+  background-image: linear-gradient( 45deg, grey, 35%, #0b0c10);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
   color: #66fcf1;
 }
+
 .mainPage {
   text-align: center;
 }
