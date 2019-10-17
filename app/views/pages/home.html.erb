@@ -1,7 +1,7 @@
 <div class="container mainPage">
   <h1 class="align" >Liftr</h1>
 
-  <div class="container bg">
+  <div class="container img">
     <%= image_tag 'barbell.jpg', class: "img-fluid rounded", alt: "barbell" %>
   </div>
 
@@ -11,7 +11,7 @@
     <div class="col">Punch in your preferences and go from there</div>
   </div>
 
-  <div class="align">
+  <div class="buttons">
     <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-outline-primary" %>
     <%= link_to 'Log In', new_user_session_path, class: "btn btn-outline-primary" %>
   </div>

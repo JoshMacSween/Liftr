@@ -17,8 +17,6 @@
 @import 'bootstrap';
 @import 'effective_bootstrap';
 
-
-
 body {
   background-image: linear-gradient( 45deg, grey, 35%, #0b0c10);
   background-repeat: no-repeat;
@@ -29,10 +27,11 @@ body {
 
 .mainPage {
   text-align: center;
+  padding-top: 25px;
 }
 
-.bg {
-  padding-bottom: 50px;
+.img {
+  padding-bottom: 25px;
 }
 
 .show {
@@ -43,10 +42,9 @@ body {
   margin-top: 25px;
 }
 
-.align  {
+.buttons  {
   text-align: center;
   padding: 25px;
-  color: grey;
 }
 
 .sidenav {
