@@ -3,15 +3,14 @@
       <%= f.text_field :movement %>
     </div>
     <div class="field">
-      <%= f.text_field :weight %>
+      <%= f.number_field :weight %>
     </div>
     <div class="field">
-      <%= f.text_field :reps %>
+      <%= f.number_field :reps %>
     </div>
     <div class="field">
-      <%= f.text_field :sets %>
+      <%= f.number_field :sets %>
     </div>
     <%= link_to_remove_association "remove exercise", f %>
   </div>
 
-  
