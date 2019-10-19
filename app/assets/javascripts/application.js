@@ -23,3 +23,10 @@
 
 //= require moment/locale/es
 //= require moment/locale/nl
+
+$(document).ready(function() {
+  $('[data-js-hide-link]').click(function(event){
+    $(event.currentTarget).closest('tr').hide()
+    event.preventDefault();
+  });
+})
