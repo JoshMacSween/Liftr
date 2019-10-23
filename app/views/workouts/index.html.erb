@@ -8,12 +8,12 @@
   </thead>
   <tbody>
     <% @workouts.each do |workout| %>
-      <tr>
-        <td><%= link_to workout.title, workout_path(workout)%> <%= link_to 'Hide', '', class: 'hide', data: {'js-hide-link' => true}%> </td>
+      <tr data-first-jquery-thing-id=<%= workout.id %>>
+        <td><%= link_to workout.title, workout_path(workout)%></td>
         <td><%= link_to workout.date.strftime('%F') if workout.date.present?%></td>
         <td><%= link_to 'Show', workout %></td>
         <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
-        <td><%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', workout, remote: true, method: :delete, data: {'js-destroy-link' => true } %></td>
       </tr>
     <% end %>
   </tbody>

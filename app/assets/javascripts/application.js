@@ -24,9 +24,16 @@
 //= require moment/locale/es
 //= require moment/locale/nl
 
-$(document).ready(function() {
-  $('[data-js-hide-link]').click(function(event){
-    $(event.currentTarget).closest('tr').hide()
-    event.preventDefault();
-  });
-})
+// $(document).ready(function() {
+//   $('[data-js-delete-link]').mousedown(function(event){
+//     $(event.currentTarget).closest('tr').fadeOut(1000);
+//     event.preventDefault();
+//     console.log("AAAA");
+//   });
+// })
+
+$(document).on('click', '[data-js-delete-link]', function(event) {
+  $(event.currentTarget).closest('tr').fadeOut(1000);
+  event.preventDefault();
+  console.log("AAAA")
+});
